@@ -16,7 +16,7 @@ bot = commands.Bot(command_prefix=cmd_prefix, intents=intents)
 
 # Configure your API keys
 GEMINI_API_KEY = "AIzaSyAgAvj_bE09gGpMJmx0LhmCK5X9eL_e51M"
-TOKEN = os.getenv("TOKEN")
+TOKEN = "MTI0ODUzOTc1MzA2MjYwMDc1Ng.G6Sjmw.hnk10bOKXRFBwgL5m8HliK0vxYdCqrJgfm8mPk"
 
 genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel('gemini-1.5-pro')
