@@ -374,4 +374,8 @@ async def handle_attachment(attachment, message):
             else:
                 await message.channel.send("Unsupported file type!")
     except Exception as e:
-  
+        logging.error(f"Error handling attachment: {e}")
+        await message.channel.send(f'Something went wrong! Try again later. {e}')
+
+# Run the bot
+bot.run(TOKEN)
