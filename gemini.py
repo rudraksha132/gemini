@@ -15,7 +15,7 @@ intents = discord.Intents.all()
 bot = commands.Bot(command_prefix=cmd_prefix, intents=intents)
 
 # Configure your API keys
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEY = "AIzaSyAgAvj_bE09gGpMJmx0LhmCK5X9eL_e51M"
 TOKEN = os.getenv("TOKEN")
 
 genai.configure(api_key=GEMINI_API_KEY)
